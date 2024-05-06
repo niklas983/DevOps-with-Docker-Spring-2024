@@ -1,0 +1,8 @@
+
+
+# I created the file text.log manually in the folder, and then run this command:
+
+$ docker run -v "/home/nik/DevOpsDocker/Docker - Part 1/exercise 1.9/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+
+
+

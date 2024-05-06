@@ -1,0 +1,14 @@
+
+
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+
+
+
+Commands given:
+
+$ docker run -d -it --name secret devopsdockeruh/simple-web-service:ubuntu
+
+$ docker exec secret ls -la
+
+$ docker exec -it secret bash
+

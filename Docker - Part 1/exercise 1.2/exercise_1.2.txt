@@ -1,0 +1,59 @@
+Script started on 2024-04-19 18:12:59+02:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="90" LINES="20"]
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ [7mdocker image ls[27mdocker image ls
+[?2004lREPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+nginx         latest    2ac752d7aeb1   2 days ago      188MB
+hello-world   latest    d2c94e258dcb   11 months ago   13.3kB
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS                      PORTS     NAMES
+71ecf1fa077e   nginx     "/docker-entrypoint.…"   2 hours ago   Exited (0) 22 minutes ago             exciting_bohr
+7dd4c65751e2   nginx     "/docker-entrypoint.…"   2 hours ago   Exited (0) 21 minutes ago             boring_golick
+de27da2edc52   nginx     "/docker-entrypoint.…"   3 hours ago   Up 3 hours                  80/tcp    pedantic_swanson
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y N
+Total reclaimed space: 0B
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ [7mdocker container stop[27mdocker container stop pedantic_swando[K[Kson
+[?2004lpedantic_swanson
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+71ecf1fa077e4fbb5c4404d690e00675cef329ba110936414c18d333dae2a027
+7dd4c65751e2798dddf3647b5ed502d464bc185becc5a6a73e03522d0974bc30
+de27da2edc52a6ac0f01831a3c53a1d1b3f09d363fa810eb766621f3b18f0548
+
+Total reclaimed space: 3.279kB
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker container[K[K[K[K[K[K[K[K[Kimage prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Total reclaimed space: 0B
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker image ls
+[?2004lREPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+nginx         latest    2ac752d7aeb1   2 days ago      188MB
+hello-world   latest    d2c94e258dcb   11 months ago   13.3kB
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker image rm 2ac
+[?2004lUntagged: nginx:latest
+Untagged: nginx@sha256:0463a96ac74b84a8a1b27f3d1f4ae5d1a70ea823219394e131f5bf3536674419
+Deleted: sha256:2ac752d7aeb1d9281f708e7c51501c41baf90de15ffc9bca7c5d38b8da41b580
+Deleted: sha256:6f48b48669b4a97eeac346e72e869c1e4c680268cca70fcdec25da738c5a7548
+Deleted: sha256:64a386b3811048d74a7db8d1de097982cbef2ebbeec1dac1595bdbdf7d316328
+Deleted: sha256:52a454c478bf4ba5e25a792469347a0796b520496647eca6f17dd385adbf2113
+Deleted: sha256:fd16bb266cbd82f06608dfde01edef9d07b42ed0f4abbbd91c343c7764847961
+Deleted: sha256:f8393e895cb6daa91475b380620c3531f4b6a1916f6c4d78f32b278d60d86d57
+Deleted: sha256:6948ce15ba3e073bca22093105d3b19795b765bf4d51fbadbaff13fad0c523d7
+Deleted: sha256:1f00ff20147800878a4ebc9c283f79149a1dde5cc11d659c69d3a9c0bfeb7d4f
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker image rm d2c
+[?2004lUntagged: hello-world:latest
+Untagged: hello-world@sha256:03b30c6a3c320ff172b52bd68eddffde6ded08ce47e650fe52de861c5e9df46d
+Deleted: sha256:d2c94e258dcb3c5ac2798d32e1249e42ef01cba4841c2234249495f87264ac5a
+Deleted: sha256:ac28800ec8bb38d5c35b49d45a6ac4777544941199075dff8c4eb63e093aa81e
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker image ls
+[?2004lREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-19 18:17:17+02:00 [COMMAND_EXIT_CODE="0"]

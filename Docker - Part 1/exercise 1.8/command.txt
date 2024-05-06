@@ -1,0 +1,7 @@
+
+# build the Docker image and tag it as "web-server"
+$ docker build -t web-server .
+
+
+
+

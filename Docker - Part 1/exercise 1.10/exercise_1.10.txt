@@ -1,0 +1,7 @@
+
+# command to start the web-server at port 8080
+$ docker run -p 8080:8080 devopsdockeruh/simple-web-service server
+
+# then entered http://localhost:8080/ in Google chrome and got: {"message":"You connected to the following path: /","path":"/"}
+
+

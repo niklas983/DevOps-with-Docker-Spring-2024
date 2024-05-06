@@ -1,0 +1,13 @@
+# The steps I followed:
+
+# 1. Created an Account on Render.com
+# 2. Created a new Web Service
+# 3. Entered the link to my image from Docker Hub: kpetrela83/rails:latest
+# 4. Chose the name, region, free plan, then clicked Create Web Service at the bottom of the page.
+# 5. Then the image was deployed on render.com and when the service was live I pasted the link below in my browser.
+
+https://rails-latest.onrender.com/
+
+
+
+

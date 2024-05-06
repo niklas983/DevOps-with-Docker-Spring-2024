@@ -1,0 +1,26 @@
+
+
+Commands to pull ubuntu and alpine:
+
+$ docker run -it --name secret devopsdockeruh/simple-web-service:ubuntu
+
+$ docker run -it --name secret2 devopsdockeruh/simple-web-service:alpine
+
+
+
+Size for each image:
+
+$ docker image ls -a
+
+ubuntu      83MB
+alpine      15.7MB
+
+
+
+Inside the alpine container:
+$ docker exec -it secret2 sh
+
+Secret message is the same:
+'You can find the source code here: https://github.com/docker-hy'
+
+

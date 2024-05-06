@@ -1,0 +1,33 @@
+
+
+Command to start process:
+
+$ docker run -it ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+
+
+Commands used to open bash inside the container and then install curl:
+
+$ docker exec -it kind_gauss bash
+
+apt-get update
+apt-get -y install curl
+
+
+
+The response when inputting helsinki.fi:
+
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>
+
+
+
+

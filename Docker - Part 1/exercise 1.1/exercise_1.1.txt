@@ -1,0 +1,10 @@
+Script started on 2024-04-19 18:05:43+02:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="90" LINES="20"]
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS                      PORTS     NAMES
+71ecf1fa077e   nginx     "/docker-entrypoint.…"   2 hours ago   Exited (0) 14 minutes ago             exciting_bohr
+7dd4c65751e2   nginx     "/docker-entrypoint.…"   2 hours ago   Exited (0) 14 minutes ago             boring_golick
+de27da2edc52   nginx     "/docker-entrypoint.…"   3 hours ago   Up 3 hours                  80/tcp    pedantic_swanson
+[?2004h]0;nik@nik-ThinkPad-T570-W10DG: ~[01;32mnik@nik-ThinkPad-T570-W10DG[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-19 18:08:18+02:00 [COMMAND_EXIT_CODE="0"]
