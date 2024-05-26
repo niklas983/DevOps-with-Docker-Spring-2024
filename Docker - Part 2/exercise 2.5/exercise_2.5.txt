@@ -1,0 +1,5 @@
+# command used to scale
+
+$ docker-compose up --scale compute=5
+
+
